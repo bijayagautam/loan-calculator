@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(240, 234, 234);
+}
+
+.loan-form{
+    background-color: aqua;
+    width: 50%;
+}
+.form-heading{
+    color: blue;
+}
