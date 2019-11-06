@@ -17,8 +17,29 @@
     <main>
         <form class="loan-form">
             <p class="form-heading"><strong>Simple Loan Calculator</strong></p>
+            <label>Loan Amount</label>
+            <label>$</label>
+            <input type="text" id="loanAmount">
+            <br><br>
+            <label>Number of Years</label>
+            <input type="text" id="numOfYears">
+            <br><br>
 
+            <div class="cal-button">
+                <input type="button" value="Calculate" id="calculateButton" class="calcu-button">
+            </div>
         </form>
+
+        <article>
+            <p><strong>Your Monthly Payments</strong></p>
+            <p>Base Calculations</p>
+            <div class="loan-details">
+                <p>Loan Amount</p>
+                <p>Interest Rate</p>
+                <p>Number of Years</p>
+                <p>Monthly Payments</p>
+            </div>
+        </article>
     </main>
     <script src="/js/index.js"></script>
 </body>

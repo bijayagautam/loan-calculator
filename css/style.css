@@ -3,9 +3,23 @@ body{
 }
 
 .loan-form{
-    background-color: aqua;
     width: 50%;
 }
+
 .form-heading{
     color: blue;
+}
+
+.cal-button{
+    text-align: center;
+}
+
+.calcu-button{
+    background-color: rgb(68, 68, 228);
+    color: white;
+}
+
+.loan-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
