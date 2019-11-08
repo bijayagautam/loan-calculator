@@ -19,6 +19,12 @@ function loanDetails(){
     document.getElementById(`interestRateDetail`).innerHTML += `${monthlyIntRate}<br>`;
     document.getElementById(`numberofYearsDetail`).innerHTML += `${loanTerms}<br>`;
     document.getElementById(`monthlyPaymentsDetail`).innerHTML += `$ ${monthlyInstallment}<br>`;
+
+    document.getElementById(`loanAmountDetail`).style.color = "red";
+    document.getElementById(`interestRateDetail`).style.color = "red";
+    document.getElementById(`numberofYearsDetail`).style.color = "red";
+    document.getElementById(`monthlyPaymentsDetail`).style.color = "red";
+
 }
 
 calButton.addEventListener("click",loanDetails)

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body{
     background-color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
 input[type=number] {
@@ -16,10 +18,12 @@ input[type=number] {
 }
 
 .loan-form{
-    width: 70%;
+    min-width: 70%;
     box-shadow: 0.5em 0.5em 4em rgb(202, 201, 201);
     border-radius: 0.2em;
     padding: 1em;
+    max-width: 25em;
+
 }
 
 .form-heading{
@@ -28,7 +32,7 @@ input[type=number] {
 
 .loan-part{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .dollar-sign{
@@ -46,7 +50,7 @@ input[type=number] {
 }
 
 .calcu-button{
-    background-color: rgb(71, 37, 223); /* Green */
+    background-color: rgb(71, 37, 223);
     border: none;
     color: white;
     padding: 0.5em;
@@ -57,5 +61,8 @@ input[type=number] {
 
 .loan-details{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center; 
+    max-width: 50em;
+  
 }
