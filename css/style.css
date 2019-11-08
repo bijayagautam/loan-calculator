@@ -1,13 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body{
-    background-color: rgb(240, 234, 234);
+    background-color: white;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.main-heading{
+    max-width: 70%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .loan-form{
-    width: 50%;
+    width: 70%;
+    box-shadow: 0.5em 0.5em 4em rgb(202, 201, 201);
+    border-radius: 0.2em;
+    padding: 1em;
 }
 
 .form-heading{
     color: blue;
+}
+
+.loan-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+
+.dollar-sign{
+    text-align: right;
+    padding: 0.5em;
+}
+
+.loanterm-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .cal-button{
@@ -15,11 +46,16 @@ body{
 }
 
 .calcu-button{
-    background-color: rgb(68, 68, 228);
+    background-color: rgb(71, 37, 223); /* Green */
+    border: none;
     color: white;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 0.3em;
 }
 
 .loan-details{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
 }

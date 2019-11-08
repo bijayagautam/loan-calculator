@@ -11,20 +11,26 @@
 </head>
 <body>
     <header>
-        <h1>Simple Loan Calculator</h1>
+        <h1 class="main-heading">Simple Loan Calculator</h1>
+        <hr>
         <p>The Simple Loan Calculator will determine your estimated payments for different loan amounts, interest rate and terms.</p>
     </header>
     <main>
         <form class="loan-form">
             <p class="form-heading"><strong>Simple Loan Calculator</strong></p>
-            <label>Loan Amount</label>
-            <label>$</label>
-            <input type="text" id="loanAmount">
-            <br><br>
-            <label>Number of Years</label>
-            <input type="text" id="numOfYears">
-            <br><br>
-
+            <div class="loan-part">
+                <label>Loan Amount</label>
+                <label class="dollar-sign">$ </label>
+                <input type="number" id="loanAmount">
+            </div>
+            <hr>
+            <br>
+            <hr>
+            <div class="loanterm-part">
+                <label>Number of Years</label>
+                <input type="number" id="numOfYears">
+            </div>
+            <br>
             <div class="cal-button">
                 <input type="button" value="Calculate" id="calculateButton" class="calcu-button">
             </div>
@@ -33,11 +39,17 @@
         <article>
             <p><strong>Your Monthly Payments</strong></p>
             <p>Base Calculations</p>
+            <hr>
             <div class="loan-details">
                 <p>Loan Amount</p>
                 <p>Interest Rate</p>
                 <p>Number of Years</p>
                 <p>Monthly Payments</p>
+
+                <label id="loanAmountDetail"></label>
+                <label id="interestRateDetail"></label>
+                <label id="numberofYearsDetail"></label>
+                <label id="monthlyPaymentsDetail"></label>
             </div>
         </article>
     </main>
