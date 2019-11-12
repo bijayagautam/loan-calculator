@@ -13,10 +13,10 @@ function loanDetails(){
     let monSum = Math.pow(monthlyIntRate, -numOfPayments);
     let monSub = 1 - monSum;
     let userMonthlyIntRate = loanAmount * IntRate;
-    let monthlyInstallment = userMonthlyIntRate / monSub;
+    let monthlyInstallment = (userMonthlyIntRate / monSub).toFixed(2);
 
     document.getElementById(`loanAmountDetail`).innerHTML += `$ ${loanAmount}<br>`;
-    document.getElementById(`interestRateDetail`).innerHTML += `${monthlyIntRate}<br>`;
+    document.getElementById(`interestRateDetail`).innerHTML += `${monthlyIntRate.toFixed(4)}<br>`;
     document.getElementById(`numberofYearsDetail`).innerHTML += `${loanTerms}<br>`;
     document.getElementById(`monthlyPaymentsDetail`).innerHTML += `$ ${monthlyInstallment}<br>`;
 

@@ -13,17 +13,17 @@ input[type=number] {
 }
 
 .main-heading{
-    max-width: 70%;
+    max-width: 50%;
     font-family: 'Roboto', sans-serif;
 }
 
 .loan-form{
-    min-width: 70%;
+    max-width: 40em;
+    min-width: 25em;
     box-shadow: 0.5em 0.5em 4em rgb(202, 201, 201);
     border-radius: 0.2em;
     padding: 1em;
-    max-width: 25em;
-
+    margin: 1em;
 }
 
 .form-heading{
@@ -65,4 +65,8 @@ input[type=number] {
     text-align: center; 
     max-width: 50em;
   
+}
+
+.summarry{
+    margin: 1em;
 }
