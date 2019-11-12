@@ -10,15 +10,15 @@ function loanDetails(){
     let IntRate = ((annualIntRate/100)/12);
 
     let monthlyIntRate = IntRate + 1;
-    let monSum = Math.pow(monthlyIntRate, -numOfPayments);
+    let monSum = Math.pow(monthlyIntRate, - numOfPayments);
     let monSub = 1 - monSum;
     let userMonthlyIntRate = loanAmount * IntRate;
     let monthlyInstallment = (userMonthlyIntRate / monSub).toFixed(2);
 
-    document.getElementById(`loanAmountDetail`).innerHTML += `$ ${loanAmount}<br>`;
-    document.getElementById(`interestRateDetail`).innerHTML += `${monthlyIntRate.toFixed(4)}<br>`;
-    document.getElementById(`numberofYearsDetail`).innerHTML += `${loanTerms}<br>`;
-    document.getElementById(`monthlyPaymentsDetail`).innerHTML += `$ ${monthlyInstallment}<br>`;
+    document.getElementById(`loanAmountDetail`).innerHTML = `$ ${loanAmount}`;
+    document.getElementById(`interestRateDetail`).innerHTML = `${monthlyIntRate.toFixed(4)}`;
+    document.getElementById(`numberofYearsDetail`).innerHTML = `${loanTerms}`;
+    document.getElementById(`monthlyPaymentsDetail`).innerHTML = `$ ${monthlyInstallment}`;
 
     document.getElementById(`loanAmountDetail`).style.color = "red";
     document.getElementById(`interestRateDetail`).style.color = "red";
